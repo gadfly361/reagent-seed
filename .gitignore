@@ -1,0 +1,6 @@
+/.repl
+/.lein-repl-history
+out
+target
+.nrepl-port
+/resources/public/bower_components/*
