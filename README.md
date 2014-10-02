@@ -25,8 +25,9 @@ Create a css file.
 $ lein garden once
 ```
 
+*Note: if it says "Successful", but you aren't able to type anything into the terminal, hit `Ctrl-c Ctrl-c`.*
+
 Create a javascript file from your clojurescript files.
-*Note: if it says "Successful", but you aren't able to type anything into the termal, hit `Ctrl-c Ctrl-c`.*
 
 ```
 $ lein cljsbuild auto
