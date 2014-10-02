@@ -7,9 +7,10 @@ This is a starting point for creating React/Reagent applications.  The following
 * [garden](https://github.com/noprompt/garden)
 * brepl (borrowed from [austin-repl-example](https://github.com/cjohansen/austin-repl-example))
 * [bower](http://bower.io/)
+* [bootstrap](http://getbootstrap.com/)
 * sticky footer
 
-Inspired by a [blog post](http://yogthos.net/#/blog/55) by @yogthos.
+This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yogthos.
 
 ## Usage
 
