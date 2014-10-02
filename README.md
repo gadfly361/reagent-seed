@@ -15,7 +15,7 @@ This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yo
 
 *Note: requires minimum [lein](https://github.com/technomancy/leiningen) version of 2.4.3*
 
-## Usage
+## usage
 
 Open a terminal and cd into the reagent-seed folder.  Download react and bootstrap.
 
@@ -43,7 +43,7 @@ Start a repl and type the following.
 (run!)
 ```
 
-Open a browser and go to *localhost:8080*. You should see your [reagent](https://github.com/holmsand/reagent) application!
+Open a browser and go to [localhost:8080](localhost:8080). You should see your reagent application!
 
 If you want to start a brepl, type the following:
 
