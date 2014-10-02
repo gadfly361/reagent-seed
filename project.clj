@@ -5,13 +5,14 @@
                  [ring "1.2.2"]
                  [compojure "1.1.6"]
                  [enlive "1.1.5"]
-
                  ;; ReactJS wrapper
                  [reagent "0.4.2"]
                  ;; Client-side routing
                  [secretary "1.2.0"]
                  ;; CSS
                  [garden "1.2.1"] ]
+
+  :min-lein-version "2.4.3"
 
   :plugins [;; Emacs repl
             [cider/cider-nrepl "0.8.0-SNAPSHOT"]
