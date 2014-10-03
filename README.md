@@ -20,10 +20,10 @@ This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yo
 Create a new project based on the *reagent-seed* template.
 
 ```
-lein new reagent-seed <name of your app>
+$ lein new reagent-seed <name of your app>
 ```
 
-cd into the folder you just made.  Download react and bootstrap.
+cd into the folder you just made.  Download react.js and bootstrap.
 
 ```
 $ bower install
