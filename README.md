@@ -2,12 +2,12 @@
 
 This is a starting point for creating React/Reagent applications.  The following comes included:
 
-* [reagent](https://github.com/holmsand/reagent): ReactJS wrapper
-* [secretary](https://github.com/gf3/secretary): Client-side routing
-* [garden](https://github.com/noprompt/garden): CSS
-* [austin](https://github.com/cemerick/austin): browser-repl (brepl) borrowed from [austin-repl-example](https://github.com/cjohansen/austin-repl-example)
-* [bower](http://bower.io/): Package manager for the web
-    * [reactJS](http://facebook.github.io/react/)
+* [reagent](https://github.com/holmsand/reagent) - react.js wrapper
+* [secretary](https://github.com/gf3/secretary) - client-side routing
+* [garden](https://github.com/noprompt/garden) - css
+* [austin](https://github.com/cemerick/austin) - browser-repl (brepl) borrowed from [austin-repl-example](https://github.com/cjohansen/austin-repl-example)
+* [bower](http://bower.io/) - package manager for the web
+    * [react.js](http://facebook.github.io/react/)
 	* [bootstrap](http://getbootstrap.com/)
 * sticky footer
 
@@ -17,7 +17,13 @@ This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yo
 
 ## usage
 
-Open a terminal and cd into the reagent-seed folder.  Download react and bootstrap.
+Create a new project based on the *reagent-seed* template.
+
+```
+lein new reagent-seed <name of your app>
+```
+
+cd into the folder you just made.  Download react and bootstrap.
 
 ```
 $ bower install
@@ -37,13 +43,13 @@ Create a javascript file from your clojurescript files.
 $ lein cljsbuild auto
 ```
 
-Start a repl and type the following.
+Start a repl and type the following:
 
 ```
 (run!)
 ```
 
-Open a browser and go to [localhost:8080](localhost:8080). You should see your reagent application!
+Open a browser and go to *localhost:8080*. You should see your reagent application!
 
 If you want to start a brepl, type the following:
 
