@@ -1,4 +1,4 @@
-(ns app.css.screen
+(ns {{ns-name}}.css.screen
   (:require  [garden.def :refer [defstyles]]
              [garden.units :as u :refer [em]]
              [garden.color :as color :refer [rgb]]))

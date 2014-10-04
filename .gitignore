@@ -1,6 +1,3 @@
-/.repl
-/.lein-repl-history
-out
-target
-.nrepl-port
-/resources/public/bower_components/*
+/pom.xml
+/target/
+/pom.xml.asc

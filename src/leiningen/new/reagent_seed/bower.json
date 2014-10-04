@@ -1,6 +1,6 @@
 {
     "name": "app",
-    "description": "A starter project for clojurescript and reagent",
+    "description": "",
     "version": "0.0.0",
     "license": "MIT",
     "private": true,

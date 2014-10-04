@@ -1,4 +1,4 @@
-(ns app.views.home-page)
+(ns {{ns-name}}.views.home-page)
 
 (defn home-page []
   [:div

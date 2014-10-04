@@ -1,4 +1,4 @@
-(ns app.session
+(ns {{ns-name}}.session
   (:require [reagent.core :as reagent :refer [atom]]))
 
 ;; ----------

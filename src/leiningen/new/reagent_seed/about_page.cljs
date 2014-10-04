@@ -1,4 +1,4 @@
-(ns app.views.about-page)
+(ns {{ns-name}}.views.about-page)
 
 (defn about-page []
   [:div

@@ -1,5 +1,5 @@
-(ns app.views.common
-  (:require  [app.session :as session]))
+(ns {{ns-name}}.views.common
+  (:require  [{{ns-name}}.session :as session]))
 
 (defn active? [state val]
   (if (= (state) val) "active" ""))
@@ -7,7 +7,7 @@
 (defn header []
   [:div.page-header {:class-name "row"}
    ;; 4 column units
-  [:div#title {:class-name "col-md-4"} "Reagent Seed"]
+  [:div#title {:class-name "col-md-4"} "{{name}}"]
    ;; 8 column units
    [:div {:class-name "col-md-8"}
     [:ul.nav.nav-pills 

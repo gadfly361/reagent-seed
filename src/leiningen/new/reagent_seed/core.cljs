@@ -1,8 +1,8 @@
-(ns app.core
+(ns {{ns-name}}.core
   (:require [reagent.core :as reagent :refer [atom]]
-            [app.session :as session]
-            [app.seed-state :as seed-state]
-            [app.views.common :as common]))
+            [{{ns-name}}.session :as session]
+            [{{ns-name}}.seed-state :as seed-state]
+            [{{ns-name}}.views.common :as common]))
 
 (defn page-render []
   [:div

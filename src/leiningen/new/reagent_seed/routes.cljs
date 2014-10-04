@@ -1,7 +1,7 @@
-(ns app.routes
+(ns {{ns-name}}.routes
   (:require [secretary.core :as secretary :include-macros true :refer [defroute]]
-            [app.session :as session]
-            [app.views.pages :as pages]
+            [{{ns-name}}.session :as session]
+            [{{ns-name}}.views.pages :as pages]
             [goog.events :as events]
             [goog.history.EventType :as EventType])
   (:import goog.History))
