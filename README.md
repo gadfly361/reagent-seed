@@ -64,3 +64,33 @@ Then type:
 ```
 
 In your browser, hit `f12`.  You should see *hello world* printed to the console.
+
+## troubleshooting
+
+*Note: the following instructions assume a linux setup.  Also, if you are copying these commands into a terminal, do not include the `$`*
+
+To use the command `bower install` (which downloads *react.js* and *bootstrap* in this template), you need to have *bower*. To install *bower* you need to have *nodejs* and *npm*.
+
+Install *nodejs*:
+
+```
+$ sudo apt-get install nodejs
+```
+
+Install *npm*:
+
+```
+$ sudo apt-get install npm
+```
+
+Install bower:
+
+```
+$ sudo npm install -g bower
+```
+
+Now try the `bower install` in your template's directory.  If you get this error */usr/bin/env: node: No such file or directory*, then your `nodejs` is not being recognized by `npm`.  Try this:
+
+```
+$ sudo ln -s `which nodejs` /usr/local/bin/node
+```
