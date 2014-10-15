@@ -15,6 +15,22 @@ This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yo
 
 *Note: requires minimum [lein](https://github.com/technomancy/leiningen) version of 2.4.3*
 
+## directory layout
+
+```
+core.cljs               ---> main react/reagent component for application
+css/
+    screen.clj          ---> main css file using Garden
+routes.cljs             ---> defining routes using Secretary
+seed_state.cljs         ---> setting initial state for when application starts up
+session.cljs            ---> contains atom with application state
+views/
+    about_page.cljs     ---> react/reagent component for the about page
+	common.cljs         ---> common react/reagent components to all page views (i.e., header and footer)
+	home_page.cljs      ---> react/reagent component for the home page
+	pages.cljs          ---> map of page names to their react/reagent components
+```
+
 ## usage
 
 Create a new project based on the *reagent-seed* template.
@@ -64,22 +80,6 @@ Then type:
 ```
 
 In your browser, hit `f12`.  You should see *hello world* printed to the console.
-
-## directory layout
-
-```
-core.cljs                         ---> main react/reagent component for application
-css/
-    screen.clj                    ---> main css file using Garden
-routes.cljs                       ---> defining routes using Secretary
-seed_state.cljs                   ---> setting initial state for when application starts up
-session.cljs                      ---> contains atom with application state
-views/
-    about_page.cljs               ---> react/reagent component for the about page
-	common.cljs                   ---> common react/reagent components to all page views (i.e., header and footer)
-	home_page.cljs                ---> react/reagent component for the home page
-	pages.cljs                    ---> map of page names to their react/reagent components
-```
 
 ## troubleshooting
 
