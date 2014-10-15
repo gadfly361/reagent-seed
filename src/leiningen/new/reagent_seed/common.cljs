@@ -11,7 +11,7 @@
    ;; 8 column units
    [:div {:class-name "col-md-8"}
     [:ul.nav.nav-pills 
-     [:li {:class (active? session/nav "home")}  [:a {:href "#/"} "Home"]]
+     [:li {:class (active? session/nav "home")}  [:a {:href "#/"} [:span {:class-name "fa fa-home"} " Home"]]]
      [:li {:class (active? session/nav "about")} [:a {:href "#/about"} "About"]]
      ]]])
 
@@ -20,5 +20,5 @@
    [:div.page-header]
    [:footer {:class-name "site-footer"}
     ;; UPDATE ME
-    "Twitter: @FIXME | Github: FIXME | Email: FIXME"]
+    [:span {:class-name "fa fa-twitter"}] " @FIXME | " [:span {:class-name "fa fa-github"}] " FIXME | " [:span {:class-name "fa fa-envelope-o"}] " FIXME@gmail.com"]
    ])

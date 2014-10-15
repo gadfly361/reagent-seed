@@ -9,6 +9,7 @@ This is a starting point for creating React/Reagent applications.  The following
 * [bower](http://bower.io/) - package manager for the web
     * [react.js](http://facebook.github.io/react/)
 	* [bootstrap](http://getbootstrap.com/)
+	* [font awesome](http://fortawesome.github.io/Font-Awesome/)
 * sticky footer
 
 This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yogthos.
@@ -39,7 +40,7 @@ Create a new project based on the *reagent-seed* template.
 $ lein new reagent-seed <name of your app>
 ```
 
-cd into the folder you just made.  Download react.js and bootstrap.
+cd into the folder you just made.  Download react.js, bootstrap, and font awesome.
 
 ```
 $ bower install
