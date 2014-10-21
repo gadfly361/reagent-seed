@@ -115,7 +115,9 @@ $ sudo ln -s `which nodejs` /usr/local/bin/node
 ## other reagent templates
 
 [reagent-template](https://github.com/reagent-project/reagent-template) - Template by the reagent-project organization.
+
 [liberagent](https://github.com/borkdude/lein-new-liberagent) - Template for apps that use Reagent on the client and Compojure+Liberator on the server.
+
 [reagent-figwheel](https://github.com/gadfly361/reagent-figwheel) - Simple template with [figwheel](https://github.com/bhauman/lein-figwheel).
 
 ## credits
