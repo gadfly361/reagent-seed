@@ -86,7 +86,7 @@ In your browser, hit `f12`.  You should see *hello world* printed to the console
 
 ## installing bower
 
-*Note: the following instructions assume a linux setup.
+*Note: the following instructions assume a linux setup.*
 
 To use the command `bower install` (which downloads *react.js* and *bootstrap* in this template), you need to have *bower*. To install *bower* you need to have *nodejs* and *npm*.
 
