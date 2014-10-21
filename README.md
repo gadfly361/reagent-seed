@@ -12,8 +12,6 @@ This is a starting point for creating React/Reagent applications.  The following
 	* [font awesome](http://fortawesome.github.io/Font-Awesome/)
 * sticky footer
 
-This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yogthos.
-
 *Note: requires minimum [lein](https://github.com/technomancy/leiningen) version of 2.4.3*
 
 ## directory layout
@@ -102,7 +100,7 @@ Install *npm*:
 $ sudo apt-get install npm
 ```
 
-Install bower:
+Install *bower*:
 
 ```
 $ sudo npm install -g bower
@@ -119,3 +117,7 @@ $ sudo ln -s `which nodejs` /usr/local/bin/node
 [reagent-template](https://github.com/reagent-project/reagent-template) - Still in development, but will be the reagent-project organization's template.
 [liberagent](https://github.com/borkdude/lein-new-liberagent) - Template for apps that use Reagent on the client and Compojure+Liberator on the server.
 [reagent-figwheel](https://github.com/gadfly361/reagent-figwheel) - Simple template with [figwheel](https://github.com/bhauman/lein-figwheel).
+
+## credits
+
+This template was inspired by a [blog post](http://yogthos.net/#/blog/55) by @yogthos.
