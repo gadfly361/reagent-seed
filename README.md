@@ -46,6 +46,8 @@ cd into the folder you just made.  Download react.js, bootstrap, and font awesom
 $ bower install
 ```
 
+*Note: if you don't have bower, see install instructions below.*
+
 Create a css file.
 
 ```
@@ -82,9 +84,9 @@ Then type:
 
 In your browser, hit `f12`.  You should see *hello world* printed to the console.
 
-## troubleshooting
+## installing bower
 
-*Note: the following instructions assume a linux setup.  Also, if you are copying these commands into a terminal, do not include the `$`*
+*Note: the following instructions assume a linux setup.
 
 To use the command `bower install` (which downloads *react.js* and *bootstrap* in this template), you need to have *bower*. To install *bower* you need to have *nodejs* and *npm*.
 
@@ -111,3 +113,9 @@ Now try the `bower install` in your template's directory.  If you get this error
 ```
 $ sudo ln -s `which nodejs` /usr/local/bin/node
 ```
+
+## other reagent templates
+
+[reagent-template](https://github.com/reagent-project/reagent-template) - Still in development, but will be the reagent-project organization's template.
+[liberagent](https://github.com/borkdude/lein-new-liberagent) - Template for apps that use Reagent on the client and Compojure+Liberator on the server.
+[reagent-figwheel](https://github.com/gadfly361/reagent-figwheel) - Simple template with [figwheel](https://github.com/bhauman/lein-figwheel).
