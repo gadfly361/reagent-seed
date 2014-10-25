@@ -14,7 +14,6 @@
 ["src/{{sanitized}}/routes.cljs" (render "routes.cljs" data)]
 ["src/{{sanitized}}/views/pages.cljs" (render "pages.cljs" data)]
 ["dev/user.clj" (render "user.clj" data)]
-["src/{{sanitized}}/seed_state.cljs" (render "seed_state.cljs" data)]
 ["src/{{sanitized}}/views/about_page.cljs" (render "about_page.cljs" data)]
 ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
 ["project.clj" (render "project.clj" data)]

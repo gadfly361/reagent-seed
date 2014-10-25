@@ -1,7 +1,7 @@
 (ns {{ns-name}}.core
   (:require [reagent.core :as reagent :refer [atom]]
             [{{ns-name}}.session :as session]
-            [{{ns-name}}.seed-state :as seed-state]
+            [{{ns-name}}.routes :as routes]
             [{{ns-name}}.views.common :as common]))
 
 (defn page-render []
@@ -10,7 +10,7 @@
    [(session/current-page)]])
 
 (defn page-component [] 
-  (reagent/create-class {:component-will-mount seed-state/page
+  (reagent/create-class {:component-will-mount routes/app-routes
                          :render page-render}))
 
 ;; initialize app
