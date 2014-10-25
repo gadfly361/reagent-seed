@@ -21,7 +21,6 @@ core.cljs               ---> main react/reagent component for application
 css/
     screen.clj          ---> main css file using Garden
 routes.cljs             ---> defining routes using Secretary
-seed_state.cljs         ---> setting initial state for when application starts up
 session.cljs            ---> contains atom with application state
 views/
     about_page.cljs     ---> react/reagent component for the about page
@@ -86,7 +85,7 @@ In your browser, hit `f12`.  You should see *hello world* printed to the console
 
 *Note: the following instructions assume a linux setup.*
 
-To use the command `bower install` (which downloads *react.js* and *bootstrap* in this template), you need to have *bower*. To install *bower* you need to have *nodejs* and *npm*.
+To use the command `bower install` (which downloads *react.js*, *bootstrap*, and *font awesome* in this template), you need to have *bower*. To install *bower* you need to have *nodejs* and *npm*.
 
 Install *nodejs*:
 
