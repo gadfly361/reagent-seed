@@ -12,11 +12,3 @@
 
 (defn put! [k v]
   (swap! app-state assoc k v))
-
-;; ----------
-;; Get State
-(defn current-page []
-  (get-state :current-page))
-
-(defn nav []
-  (get-state :nav))
