@@ -39,10 +39,10 @@
                         :source-paths ["src" "dev"]
                         ;; Compiler flags:
                         :compiler {;; Where to save the file:
-                                   :output-to "resources/public/app.js"
+                                   :output-to "resources/public/js/app.js"
                                    ;; Where to put the output directory
-                                   :output-dir "resources/public/out"
+                                   :output-dir "resources/public/js/out"
                                    ;; Source-maps
-                                   :source-map "resources/public/app.js.map"
+                                   :source-map "resources/public/js/app.js.map"
                                    ;; Optimizations:
                                    :optimizations :whitespace}}]})
