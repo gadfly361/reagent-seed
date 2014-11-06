@@ -1,5 +1,5 @@
 # reagent-seed
-
+nn
 This is a starting point for creating React/Reagent applications.  The following comes included:
 
 * [reagent](https://github.com/holmsand/reagent) - react.js wrapper
@@ -80,6 +80,10 @@ Generally trying to make the template easier to follow.
 * Referred `(get-state)` function in a few places
 * Added README.md
 * Added .gitignore
+
+## Examples
+
+Many of the recipes in [reagent-cookbook](https://github.com/gadfly361/reagent-cookbook) are based on this template.
 
 ## other reagent templates
 
