@@ -19,7 +19,7 @@
              ["project.clj" (render "project.clj" data)]
              ["src/{{sanitized}}/css/screen.clj" (render "screen.clj" data)]
              ["src/{{sanitized}}/session.cljs" (render "session.cljs" data)]
-             ["resources/index.html" (render "index.html" data)]
+             ["resources/public/index.html" (render "index.html" data)]
              [".gitignore" (render ".gitignore" data)]
              ["README.md" (render "README.md" data)]
              )))

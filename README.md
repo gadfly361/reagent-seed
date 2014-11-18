@@ -1,8 +1,8 @@
 # reagent-seed
-nn
+
 This is a starting point for creating React/Reagent applications.  The following comes included:
 
-* [reagent](https://github.com/holmsand/reagent) - react.js wrapper
+* [reagent](https://github.com/reagent-project/reagent) - react.js wrapper
 * [secretary](https://github.com/gf3/secretary) - client-side routing
 * [garden](https://github.com/noprompt/garden) - css
 * [austin](https://github.com/cemerick/austin) - browser-repl (brepl) borrowed from [austin-repl-example](https://github.com/cjohansen/austin-repl-example)
@@ -71,17 +71,19 @@ In your browser, hit `f12`.  You should see *hello world* printed to the console
 
 ## changelog
 
+**v0.1.6**
+
+* Moved index.html into the `resources/public/` directory
+* Removed some boilerplate on home-page and about-page
+
 **v0.1.5**
 
-Generally trying to make the template easier to follow.
-
-* Removed bower
-* Removed sticky footer
+* Generally trying to make the template easier to follow.
+* Removed bower and sticky footer
 * Referred `(get-state)` function in a few places
-* Added README.md
-* Added .gitignore
+* Added README.md and .gitignore
 
-## Examples
+## examples
 
 Many of the recipes in [reagent-cookbook](https://github.com/gadfly361/reagent-cookbook) are based on this template.
 

@@ -5,12 +5,12 @@
   (if (= state val) "active" ""))
 
 (defn header []
-  [:div.page-header {:class-name "row"}
+  [:div.page-header.row
    ;; 4 column units
-  [:div#title {:class-name "col-md-4"} "{{name}}"]
+  [:div#title.col-md-6 "{{name}}"]
    ;; 8 column units
-   [:div {:class-name "col-md-8"}
+   [:div.col-md-6
     [:ul.nav.nav-pills 
-     [:li {:class (active? (get-state :nav) "home")}  [:a {:href "#/"} [:span {:class-name "fa fa-home"} " Home"]]]
+     [:li {:class (active? (get-state :nav) "home")}  [:a {:href "#/"} [:span.fa.fa-home " Home"]]]
      [:li {:class (active? (get-state :nav) "about")} [:a {:href "#/about"} "About"]]
      ]]])
