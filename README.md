@@ -13,16 +13,27 @@ This is a starting point for creating React/Reagent applications.  The following
 ## directory layout
 
 ```
-core.cljs               ---> main react/reagent component for application
-css/
-    screen.clj          ---> main css file using Garden
-routes.cljs             ---> defining routes using Secretary
-session.cljs            ---> contains atom with application state
-views/
-    about_page.cljs     ---> react/reagent component for the about page
-	common.cljs         ---> common react/reagent components to all page views
-	home_page.cljs      ---> react/reagent component for the home page
-	pages.cljs          ---> map of page names to their react/reagent components
+dev/
+    user.clj                --> functions to start server and browser repl (brepl)
+    user.cljs               --> enabling printing to browser's console when connected through a brepl
+
+project.clj                 --> application summary and setup
+
+resources/
+    public/                 --> this is where assets for your application will be stored
+        index.html          --> this is the html for your application
+
+src/example/
+    core.cljs               ---> main reagent component for application
+    css/
+        screen.clj          ---> main css file using Garden
+    routes.cljs             ---> defining routes using Secretary
+    session.cljs            ---> contains atom with application state
+    views/
+        about_page.cljs     ---> reagent component for the about page
+    	common.cljs         ---> common reagent components to all page views
+    	home_page.cljs      ---> reagent component for the home page
+    	pages.cljs          ---> map of page names to their react/reagent components
 ```
 
 ## usage
@@ -75,12 +86,13 @@ In your browser, hit `f12`.  You should see *hello world* printed to the console
 
 * Moved index.html into the `resources/public/` directory
 * Removed some boilerplate on home-page and about-page
+* Renamed `get-state` to `global-state`
 
 **v0.1.5**
 
 * Generally trying to make the template easier to follow.
 * Removed bower and sticky footer
-* Referred `(get-state)` function in a few places
+* Referred `get-state` function in a few places
 * Added README.md and .gitignore
 
 ## examples

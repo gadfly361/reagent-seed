@@ -1,13 +1,13 @@
 (ns {{ns-name}}.core
-  (:require [reagent.core :as reagent :refer [atom]]
-            [{{ns-name}}.session :as session :refer [get-state]]
+  (:require [reagent.core :as reagent]
+            [{{ns-name}}.session :as session :refer [global-state]]
             [{{ns-name}}.routes :as routes]
             [{{ns-name}}.views.common :as common]))
 
 (defn page-render []
-  [:div
+  [:div.container
    [common/header]
-   [(get-state :current-page)]])
+   [(global-state :current-page)]])
 
 (defn page-component [] 
   (reagent/create-class {:component-will-mount routes/app-routes
