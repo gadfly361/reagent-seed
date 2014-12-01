@@ -1,6 +1,6 @@
 (ns {{ns-name}}.routes
     (:require [secretary.core :as secretary :include-macros true :refer [defroute]]
-              [{{ns-name}}.session :as session :refer [global-put!]]
+              [{{ns-name}}.session :refer [global-put!]]
               [{{ns-name}}.views.pages :refer [pages]]
               [goog.events :as events]
               [goog.history.EventType :as EventType])

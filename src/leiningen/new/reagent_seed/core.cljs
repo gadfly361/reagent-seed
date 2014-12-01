@@ -1,6 +1,6 @@
 (ns {{ns-name}}.core
   (:require [reagent.core :as reagent]
-            [{{ns-name}}.session :as session :refer [global-state]]
+            [{{ns-name}}.session :refer [global-state]]
             [{{ns-name}}.routes :as routes]
             [{{ns-name}}.views.common :as common]))
 

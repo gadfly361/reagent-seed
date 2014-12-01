@@ -82,6 +82,10 @@ In your browser, hit `f12`.  You should see *hello world* printed to the console
 
 ## changelog
 
+**v0.1.7**
+
+* fixed font-awesome span in `common.cljs`
+
 **v0.1.6**
 
 * Moved index.html into the `resources/public/` directory
