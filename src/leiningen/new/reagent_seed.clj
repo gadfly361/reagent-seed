@@ -8,18 +8,22 @@
   (let [data {:name name
               :ns-name (sanitize-ns name)
               :sanitized (name-to-path name)}]
-    (->files data ["src/{{sanitized}}/views/home_page.cljs" (render "home_page.cljs" data)]
-             ["dev/user.cljs" (render "user.cljs" data)]
-             ["src/{{sanitized}}/views/common.cljs" (render "common.cljs" data)]
-             ["src/{{sanitized}}/routes.cljs" (render "routes.cljs" data)]
-             ["src/{{sanitized}}/views/pages.cljs" (render "pages.cljs" data)]
-             ["dev/user.clj" (render "user.clj" data)]
-             ["src/{{sanitized}}/views/about_page.cljs" (render "about_page.cljs" data)]
-             ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
-             ["project.clj" (render "project.clj" data)]
-             ["src/{{sanitized}}/css/screen.clj" (render "screen.clj" data)]
-             ["src/{{sanitized}}/session.cljs" (render "session.cljs" data)]
-             ["resources/public/index.html" (render "index.html" data)]
-             [".gitignore" (render ".gitignore" data)]
+    (->files data 
              ["README.md" (render "README.md" data)]
+             ["project.clj" (render "project.clj" data)]
+
+             ["src/clj/{{sanitized}}/handler.clj" (render "src/clj/handler.clj" data)]
+
+             ["resources/public/index.html" (render "resources/public/index.html" data)]
+             ["resources/public/css/re-com.css" (render "resources/public/css/re-com.css")]
+             ["resources/public/css/material-design-iconic-font.min.css" (render "resources/public/css/material-design-iconic-font.min.css")]
+
+             ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/core.cljs" data)]
+             ["src/cljs/{{sanitized}}/db.cljs" (render "src/cljs/db.cljs" data)]
+             ["src/cljs/{{sanitized}}/subs.cljs" (render "src/cljs/subs.cljs" data)]
+             ["src/cljs/{{sanitized}}/handlers.cljs" (render "src/cljs/handlers.cljs" data)]
+             ["src/cljs/{{sanitized}}/routes.cljs" (render "src/cljs/routes.cljs" data)]
+
+             ["src/cljs/{{sanitized}}/pages/home.cljs" (render "src/cljs/pages/home.cljs" data)]
+             ["src/cljs/{{sanitized}}/pages/about.cljs" (render "src/cljs/pages/about.cljs" data)]
              )))

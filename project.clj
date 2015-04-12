@@ -1,5 +1,5 @@
-(defproject reagent-seed/lein-template "0.1.7"
-  :description "Template for creating React/Reagent applications in Clojurescript."
+(defproject reagent-seed/lein-template "0.2.0"
+  :description "Clojurescript template for making Reagent applications with Re-Frame, Re-Com, and Secretary."
   :url "https://github.com/gadfly361/reagent-seed"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}

@@ -4,38 +4,16 @@ A reagent webapp designed to ... well, that part is up to you.
 
 ## Usage
 
-Create a css file.
+Compile cljs files.
 
 ```
-$ lein garden once
+$ lein cljsbuild once
 ```
 
-*Note: if it says "Successful", but you aren't able to type anything into the terminal, hit `Ctrl-c Ctrl-c`.*
+*Note: to compile an optimized version, run `lein clean` followed by `lein with-profile prod cljsbuild once`*
 
-Create a javascript file from your clojurescript files.
-
-```
-$ lein cljsbuild auto
-```
-
-Start a repl and type the following:
+Start a server.
 
 ```
-(run!)
+$ lein ring server
 ```
-
-Open a browser and go to *localhost:8080*. You should see your reagent application!
-
-If you want to start a brepl, type the following:
-
-```
-(cljs!)
-```
-
-Then type:
-
-```
-(println "hello world")
-```
-
-In your browser, hit `f12`.  You should see *hello world* printed to the console.
