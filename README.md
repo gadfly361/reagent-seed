@@ -2,6 +2,8 @@
 
 A Leiningen template for projects using [Reagent](https://github.com/reagent-project/reagent), [Re-Frame](https://github.com/Day8/re-frame), [Re-Com](https://github.com/Day8/re-com), and [Secretary](https://github.com/gf3/secretary).
 
+[Demo](http://reagent-seed.s3-website-us-east-1.amazonaws.com/)
+
 ## Usage
 
 Create application with reagent-seed template.
