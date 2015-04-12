@@ -4,6 +4,12 @@ A Leiningen template for projects using [Reagent](https://github.com/reagent-pro
 
 ## Usage
 
+Create application with reagent-seed template.
+
+```
+$ lein new reagent-seed <name of app>
+```
+
 Compile cljs files.
 
 ```
