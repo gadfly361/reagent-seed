@@ -4,7 +4,7 @@
 
 (re-frame/register-handler
  :initialize-db
- (fn [db _]
+ (fn [_ _]
    db/initialize-db))
 
 (re-frame/register-handler

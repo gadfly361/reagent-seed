@@ -1,4 +1,4 @@
-(defproject reagent-seed/lein-template "0.2.0"
+(defproject reagent-seed/lein-template "0.2.1"
   :description "Clojurescript template for making Reagent applications with Re-Frame, Re-Com, and Secretary."
   :url "https://github.com/gadfly361/reagent-seed"
   :license {:name "Eclipse Public License"
