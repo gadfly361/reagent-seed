@@ -7,7 +7,6 @@
                  [prone "0.8.0"]
                  [reagent "0.5.0"]
                  [re-frame "0.2.0"]
-                 [com.andrewmcveigh/cljs-time "0.3.2"]
                  [re-com "0.4.1"]
                  [secretary "1.2.3"]]
 
