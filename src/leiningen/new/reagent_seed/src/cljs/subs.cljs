@@ -3,6 +3,6 @@
     (:require [re-frame.core :as re-frame]))
 
 (re-frame/register-sub
- :current-page
+ :active-panel
  (fn [db _]
-   (reaction (:page @db))))
+   (reaction (:active-panel @db))))

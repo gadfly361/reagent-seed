@@ -6,8 +6,8 @@
                  [compojure "1.3.2"]
                  [prone "0.8.0"]
                  [reagent "0.5.0"]
-                 [re-frame "0.2.0"]
-                 [re-com "0.4.1"]
+                 [re-frame "0.4.0"]
+                 [re-com "0.5.4"]
                  [secretary "1.2.3"]]
 
   :min-lein-version "2.5.0"

@@ -8,6 +8,6 @@
    db/initialize-db))
 
 (re-frame/register-handler
- :update-page
- (fn [db [_ new-page]]
-   (assoc db :page new-page)))
+ :set-active-panel
+ (fn [db [_ active-panel]]
+   (assoc db :active-panel active-panel)))

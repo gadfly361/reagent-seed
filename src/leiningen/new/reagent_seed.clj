@@ -23,7 +23,5 @@
              ["src/cljs/{{sanitized}}/subs.cljs" (render "src/cljs/subs.cljs" data)]
              ["src/cljs/{{sanitized}}/handlers.cljs" (render "src/cljs/handlers.cljs" data)]
              ["src/cljs/{{sanitized}}/routes.cljs" (render "src/cljs/routes.cljs" data)]
-
-             ["src/cljs/{{sanitized}}/pages/home.cljs" (render "src/cljs/pages/home.cljs" data)]
-             ["src/cljs/{{sanitized}}/pages/about.cljs" (render "src/cljs/pages/about.cljs" data)]
+             ["src/cljs/{{sanitized}}/views.cljs" (render "src/cljs/views.cljs" data)]
              )))

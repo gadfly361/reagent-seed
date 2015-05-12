@@ -1,5 +1,4 @@
-(ns {{ns-name}}.db
-    (:require [{{ns-name}}.pages.home :as home]))
+(ns {{ns-name}}.db)
 
 (def initialize-db
-  {:page home/page})
+  {:active-panel :home-panel})
