@@ -15,8 +15,8 @@
              ["src/clj/{{sanitized}}/handler.clj" (render "src/clj/handler.clj" data)]
 
              ["resources/public/index.html" (render "resources/public/index.html" data)]
-             ["resources/public/css/re-com.css" (render "resources/public/css/re-com.css")]
-             ["resources/public/css/material-design-iconic-font.min.css" (render "resources/public/css/material-design-iconic-font.min.css")]
+             ["resources/public/vendor/css/re-com.css" (render "resources/public/css/re-com.css")]
+             ["resources/public/vendor/css/material-design-iconic-font.min.css" (render "resources/public/css/material-design-iconic-font.min.css")]
 
              ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/core.cljs" data)]
              ["src/cljs/{{sanitized}}/db.cljs" (render "src/cljs/db.cljs" data)]
