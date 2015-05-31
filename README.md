@@ -1,6 +1,6 @@
-# DEPRICATED
+# Deprecated
 
-This template has been depricated in favor of [re-frame-template](https://github.com/Day8/re-frame-template).
+This template has been deprecated in favor of [re-frame-template](https://github.com/Day8/re-frame-template).
 
 # Reagent-Seed
 
