@@ -1,3 +1,7 @@
+# DEPRICATED
+
+This template has been depricated in favor of [re-frame-template](https://github.com/Day8/re-frame-template).
+
 # Reagent-Seed
 
 A Leiningen template for projects using [Reagent](https://github.com/reagent-project/reagent), [Re-Frame](https://github.com/Day8/re-frame), [Re-Com](https://github.com/Day8/re-com), and [Secretary](https://github.com/gf3/secretary).
