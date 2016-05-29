@@ -16,8 +16,7 @@
 ** Test
 - [[file:test-cljs/runner.org]]
 - [[file:test-cljs/core_test.org]]
-
-
+  
 * Devcards
 
 - [[file:devcards/core_card.org]]
@@ -26,4 +25,5 @@
 * Html
 
 - [[file:html/index.org]]
+- [[file:html/cards.org]]
 

@@ -25,6 +25,7 @@
              ["src/devcards/first_card.org" (render "src/devcards/first_card.org" data)]
 
              ["src/html/index.org" (render "src/html/index.org" data)]
+             ["src/html/cards.org" (render "src/html/cards.org" data)]
 
              ["src/org-setup.org" (render "src/org-setup.org" data)]
              ["src/project.org" (render "src/project.org" data)]
