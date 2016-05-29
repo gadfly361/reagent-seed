@@ -1,4 +1,4 @@
-(defproject reagent-seed/lein-template "0.3.0-1"
+(defproject reagent-seed/lein-template "0.3.0-2"
   :description "Clojurescript template for making Reagent applications with Org-mode."
   :url "https://github.com/gadfly361/reagent-seed"
   :license {:name "MIT"}
