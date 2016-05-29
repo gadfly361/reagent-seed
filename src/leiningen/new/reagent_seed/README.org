@@ -1,0 +1,116 @@
+#+STARTUP: indent
+#+TITLE: {{name}}
+
+* Usage
+
+** Generate Source Code from Org Files
+
+In the top-level of your application, run:
+
+#+BEGIN_SRC 
+./scripts/watch.sh src/ ./scripts/tangle-all.sh
+#+END_SRC
+
+Press =C-c= to force the initial tangle. If you make any changes to
+your .org files, they will automatically get tangled. Press =C-\= to
+quit.
+
+Tangling is the process of extracting & combining source blocks from
+=.org= files into an actual working project/source tree. Once tangling
+is complete, you can =cd= into the generated project directory
+(=generated=) and then use =lein= as usual.
+
+** From Inside =generated= Directory
+
+*** Start Cider from Emacs
+
+Put this in your Emacs config file:
+
+#+BEGIN_SRC 
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+#+END_SRC
+
+Navigate to a clojurescript file and start a figwheel REPL with =cider-jack-in-clojurescript= or (=C-c M-J=)
+
+*** Compile css
+
+Compile css file once.
+
+#+BEGIN_SRC 
+lein garden once
+#+END_SRC
+
+Automatically recompile css file on change.
+
+#+BEGIN_SRC 
+lein garden auto
+#+END_SRC
+
+*** Run application:
+
+#+BEGIN_SRC 
+lein clean
+lein figwheel dev
+#+END_SRC
+
+Figwheel will automatically push cljs changes to the browser.
+
+Wait a bit, then browse to [[http://localhost:3449]].
+
+*** Run tests:
+
+#+BEGIN_SRC 
+lein clean
+lein doo phantom test once
+#+END_SRC
+
+The above command assumes that you have [[https://www.npmjs.com/package/phantomjs][phantomjs]] installed. However, please note that [[https://github.com/bensu/doo][doo]] can be configured to run cljs.test in many other JS environments (chrome, ie, safari, opera, slimer, node, rhino, or nashorn).
+
+*** Devcards
+
+#+BEGIN_SRC 
+lein clean
+lein figwheel devcards
+#+END_SRC
+
+Figwheel will automatically push cljs changes to the browser. Wait a bit, then browse to [[http://localhost:3449/cards.html]].
+
+To build a minified version:
+
+#+BEGIN_SRC 
+lein clean
+lein cljsbuild once hostedcards
+#+END_SRC
+
+Then open =resources/public/cards.html=
+
+*** Production Build
+
+#+BEGIN_SRC 
+lein clean
+lein cljsbuild once min
+#+END_SRC
+
+* License
+
+The MIT License (MIT)
+
+Copyright © 2015 Matthew Jaoudi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

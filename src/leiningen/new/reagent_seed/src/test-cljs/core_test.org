@@ -1,0 +1,15 @@
+#+SETUPFILE: ../org-setup.org
+#+Title: core_test.cljs
+
+* Source Code
+
+#+BEGIN_SRC clojure :tangle ../../generated/test/cljs/{{sanitized}}/core_test.cljs
+(ns {{name}}.core-test
+  (:require [cljs.test :refer-macros [deftest testing is]]
+            [{{name}}.core :as core]))
+
+(deftest fake-test
+  (testing "fake description"
+    (is (= 1 2))))
+#+END_SRC
+

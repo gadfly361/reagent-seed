@@ -1,8 +1,7 @@
-(defproject reagent-seed/lein-template "0.2.2"
-  :description "Clojurescript template for making Reagent applications with Re-Frame, Re-Com, and Secretary."
+(defproject reagent-seed/lein-template "0.3.0"
+  :description "Clojurescript template for making Reagent applications with Org-mode."
   :url "https://github.com/gadfly361/reagent-seed"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT"}
  :scm {:name "git"
          :url "https://github.com/gadfly361/reagent-seed"}
   :eval-in-leiningen true)

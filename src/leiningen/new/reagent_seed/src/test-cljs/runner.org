@@ -1,0 +1,14 @@
+#+SETUPFILE: ../org-setup.org
+#+Title: runner.cljs
+
+* Source Code
+
+#+BEGIN_SRC clojure :tangle ../../generated/test/cljs/{{sanitized}}/runner.cljs
+(ns {{name}}.runner
+    (:require [doo.runner :refer-macros [doo-tests]]
+              [{{name}}.core-test]))
+
+(doo-tests '{{name}}.core-test)
+
+#+END_SRC
+

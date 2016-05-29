@@ -1,0 +1,16 @@
+#+SETUPFILE: ../org-setup.org
+#+Title: core_card.cljs
+
+* Source Code
+
+#+BEGIN_SRC clojure :tangle ../../generated/src/devcards/{{sanitized}}/core_card.cljs
+(ns {{name}}.core-card
+  (:require-macros
+   [devcards.core :as dc])
+  (:require
+   [{{name}}.first-card]))
+
+
+(dc/start-devcard-ui!)
+#+END_SRC
+
