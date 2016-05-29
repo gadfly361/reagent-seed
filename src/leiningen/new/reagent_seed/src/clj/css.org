@@ -1,0 +1,13 @@
+#+SETUPFILE: ../org-setup.org
+#+Title: css.clj
+
+* Source Code
+
+#+BEGIN_SRC clojure :tangle ../../generated/src/clj/{{sanitized}}/css.clj
+(ns {{name}}.css
+  (:require [garden.def :refer [defstyles]]))
+
+(defstyles screen
+  [:p {:color "green"}])
+#+END_SRC
+

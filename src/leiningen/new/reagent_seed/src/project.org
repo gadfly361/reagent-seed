@@ -1,0 +1,220 @@
+#+SETUPFILE: org-setup.org
+#+TITLE: project.clj
+
+* Injected properties                                              :noexport:
+
+** Version
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-version
+0.1.0-SNAPSHOT
+#+END_SRC
+
+** Minimum Leiningen Version
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-min-lein-version
+"2.5.3"
+#+END_SRC
+
+** Source Paths
+
+*** Clojure
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clojure-source-path
+"src/clj"
+#+END_SRC
+
+*** Clojurescript
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clojurescript-source-path
+"src/cljs"
+#+END_SRC
+
+*** Devcards
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-devcards-source-path
+"src/devcards"
+#+END_SRC
+
+*** Garden
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-garden-source-path
+"src/clj"
+#+END_SRC
+
+** Clean Targets
+
+*** javascript
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clean-javascript
+"resources/public/js"
+#+END_SRC
+
+*** css
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clean-css
+"resources/public/css"
+#+END_SRC
+
+*** target
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clean-target
+"target"
+#+END_SRC
+
+*** test
+#+BEGIN_SRC clojure :exports none :noweb-ref inj-clean-test
+"test/js"
+#+END_SRC
+
+* Dependencies
+
+** [[https://github.com/clojure/clojure][Clojure]]
+#+BEGIN_SRC clojure :noweb-ref dep-clj
+[org.clojure/clojure "1.7.0"]
+#+END_SRC
+
+** [[https://github.com/clojure/clojurescript][ClojureScript]]
+#+BEGIN_SRC clojure :noweb-ref dep-cljs
+[org.clojure/clojurescript "1.7.228"]
+#+END_SRC
+
+** [[https://github.com/bhauman/devcards][Devcards]]
+#+BEGIN_SRC clojure :noweb-ref dep-devcards
+[devcards "0.2.0-8" :exclusions [cljsjs/react]]
+#+END_SRC
+
+** [[https://github.com/bhauman/lein-figwheel][Figwheel Sidecar]]
+#+BEGIN_SRC clojure :noweb-ref dep-fig-side
+[figwheel-sidecar "0.5.3"]
+#+END_SRC
+
+** [[https://github.com/noprompt/garden][Garden]]
+#+BEGIN_SRC clojure :noweb-ref dep-garden
+[secretary "1.2.3"]
+#+END_SRC
+
+** [[https://github.com/cemerick/piggieback][Piggieback]]
+#+BEGIN_SRC clojure :noweb-ref dep-piggie
+[com.cemerick/piggieback "0.2.1"]
+#+END_SRC
+
+** [[https://github.com/reagent-project/reagent][Reagent]]
+#+BEGIN_SRC clojure :noweb-ref dep-reagent
+[reagent "0.5.1"]
+#+END_SRC
+
+** [[https://github.com/gf3/secretary][Secretary]]
+#+BEGIN_SRC clojure :noweb-ref dep-secretary
+[secretary "1.2.3"]
+#+END_SRC
+
+* Plugins
+
+** [[https://github.com/clojure-emacs/cider][Cider]]
+#+BEGIN_SRC clojure :noweb-ref plug-cider
+[cider/cider-nrepl "0.13.0-SNAPSHOT"]
+#+END_SRC
+
+** [[https://github.com/emezeske/lein-cljsbuild][Cljsbuild]]
+#+BEGIN_SRC clojure :noweb-ref plug-cljsbuild
+[lein-cljsbuild "1.1.3"]
+#+END_SRC
+
+** [[https://github.com/bensu/doo][Doo]]
+#+BEGIN_SRC clojure :noweb-ref plug-doo
+[lein-doo "0.1.6"]
+#+END_SRC
+
+** [[https://github.com/bhauman/lein-figwheel][Figwheel]]
+#+BEGIN_SRC clojure :noweb-ref plug-figwheel
+[lein-figwheel "0.5.2"]
+#+END_SRC
+
+** [[https://github.com/noprompt/lein-garden][Garden]]
+#+BEGIN_SRC clojure :noweb-ref plug-garden
+[lein-garden "0.2.6"]
+#+END_SRC
+
+* Repl Options                                                     :noexport:
+
+** nrepl-middleware
+#+BEGIN_SRC clojure :noweb-ref repl-opts-piggie
+[cemerick.piggieback/wrap-cljs-repl]
+#+END_SRC
+
+* Source Code                                                      :noexport:
+
+#+BEGIN_SRC clojure :tangle ../generated/project.clj :noweb yes
+  (defproject {{ns-name}} "<<inj-version>>"
+    :dependencies [<<dep-clj>>
+                   <<dep-cljs>>
+                   <<dep-devcards>>
+                   <<dep-garden>>
+                   <<dep-reagent>>
+                   <<dep-secretary>>]
+
+    :min-lein-vesion <<inj-min-lein-version>>
+
+    :source-paths [<<inj-clojure-source-path>>]
+
+    :clean-targets ^{:protect false} [<<inj-clean-javascript>>
+                                      <<inj-clean-css>>
+                                      <<inj-clean-target>>
+                                      <<inj-clean-test>>]
+
+    :plugins [<<plug-cljsbuild>>
+              <<plug-garden>>]
+
+
+    :figwheel {:css-dirs ["resources/public/css"]}
+
+    :garden {:builds [{:id           "screen"
+                       :source-paths [<<inj-garden-source-path>>]
+                       :stylesheet   {{name}}.css/screen
+                       :compiler     {:output-to     "resources/public/css/screen.css"
+                                      :pretty-print? true}}]}
+
+    :repl-options {:nrepl-middleware <<repl-opts-piggie>>}
+
+    :profiles
+    {:dev
+     {:plugins      [<<plug-figwheel>>
+                     <<plug-cider>>
+                     <<plug-doo>>
+                     <<plug-figwheel>>]
+      :dependencies [<<dep-fig-side>>
+                     <<dep-piggie>>]}}
+
+    :cljsbuild
+    {:builds
+     [{:id           "dev"
+       :source-paths ["src/cljs"]
+       :figwheel     {:on-jsload "{{name}}.core/reload"}
+       :compiler     {:main                 {{name}}.core
+                      :output-to            "resources/public/js/app.js"
+                      :output-dir           "resources/public/js/out"
+                      :asset-path           "js/out"
+                      :source-map-timestamp true}}
+
+      {:id           "devcards"
+       :source-paths ["src/devcards" "src/cljs"]
+       :figwheel     {:devcards true }
+       :compiler     {:main                 "{{name}}.core-card"
+                      :asset-path           "js/devcards_out"
+                      :output-to            "resources/public/js/devcards.js"
+                      :output-dir           "resources/public/js/devcards_out"
+                      :source-map-timestamp true }}
+
+      {:id           "hostedcards"
+       :source-paths ["src/devcards" "src/cljs"]
+       :compiler     {:main          "{{name}}.core-card"
+                      :devcards      true
+                      :asset-path    "js/devcards_out"
+                      :output-to     "resources/public/js/devcards.js"
+                      :optimizations :advanced}}
+
+      {:id           "min"
+       :source-paths ["src/cljs"]
+       :compiler     {:main          {{name}}.core
+                      :output-to     "resources/public/js/app.js"
+                      :optimizations :advanced
+                      :pretty-print  false}}
+
+      {:id           "test"
+       :source-paths ["src/cljs" "test/cljs"]
+       :compiler     {:output-to     "resources/public/js/test.js"
+                      :main          {{name}}.runner
+                      :optimizations :none}}
+      ]})
+#+END_SRC

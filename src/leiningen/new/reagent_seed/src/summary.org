@@ -1,0 +1,29 @@
+#+SETUPFILE: org-setup.org
+#+TITLE: {{name}}
+
+=C-c C-o= to open a namespace
+
+* Clojure
+
+- [[file:project.org]]
+- [[file:clj/css.org]]
+
+* Clojurescript
+
+** Source
+- [[file:cljs/core.org]]
+
+** Test
+- [[file:test-cljs/runner.org]]
+- [[file:test-cljs/core_test.org]]
+
+
+* Devcards
+
+- [[file:devcards/core_card.org]]
+- [[file:devcards/first_card.org]]
+
+* Html
+
+- [[file:html/index.org]]
+
