@@ -74,14 +74,19 @@
 [devcards "0.2.0-8" :exclusions [cljsjs/react]]
 #+END_SRC
 
+** [[https://github.com/binaryage/cljs-devtools][Devtools]]
+#+BEGIN_SRC clojure :noweb-ref dep-devtools
+[binaryage/devtools "0.6.1"]
+#+END_SRC
+
 ** [[https://github.com/bhauman/lein-figwheel][Figwheel Sidecar]]
 #+BEGIN_SRC clojure :noweb-ref dep-fig-side
-[figwheel-sidecar "0.5.3"]
+[figwheel-sidecar "0.5.4-3"]
 #+END_SRC
 
 ** [[https://github.com/noprompt/garden][Garden]]
 #+BEGIN_SRC clojure :noweb-ref dep-garden
-[secretary "1.2.3"]
+[garden "1.3.2"]
 #+END_SRC
 
 ** [[https://github.com/cemerick/piggieback][Piggieback]]
@@ -118,7 +123,7 @@
 
 ** [[https://github.com/bhauman/lein-figwheel][Figwheel]]
 #+BEGIN_SRC clojure :noweb-ref plug-figwheel
-[lein-figwheel "0.5.2"]
+[lein-figwheel "0.5.4-3"]
 #+END_SRC
 
 ** [[https://github.com/noprompt/lein-garden][Garden]]
@@ -140,6 +145,7 @@
     :dependencies [<<dep-clj>>
                    <<dep-cljs>>
                    <<dep-devcards>>
+                   <<dep-devtools>>
                    <<dep-garden>>
                    <<dep-reagent>>
                    <<dep-secretary>>]
@@ -209,6 +215,7 @@
        :compiler     {:main          {{name}}.core
                       :output-to     "resources/public/js/app.js"
                       :optimizations :advanced
+                      :closure-defines {goog.DEBUG false}
                       :pretty-print  false}}
 
       {:id           "test"

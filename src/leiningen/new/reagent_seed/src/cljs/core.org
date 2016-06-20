@@ -5,14 +5,29 @@
 
 #+BEGIN_SRC clojure :tangle ../../generated/src/cljs/{{sanitized}}/core.cljs
   (ns {{name}}.core
-    (:require-macros [secretary.core :refer [defroute]])
-    (:import goog.History)
-    (:require
-     [secretary.core :as secretary]
-     [goog.events :as events]
-     [goog.history.EventType :as EventType]
-     [reagent.core :as reagent]))
+      (:require-macros [secretary.core :refer [defroute]])
+      (:import goog.History)
+      (:require
+       [secretary.core :as secretary]
+       [goog.events :as events]
+       [goog.history.EventType :as EventType]
+       [reagent.core :as reagent]
+       [devtools.core :as devtools]))
 
+
+  ;; Dev
+
+  (defonce debug?
+    ^boolean js/goog.DEBUG)
+
+  (defn dev-setup []
+    (when debug?
+      (enable-console-print!)
+      (println "dev mode")
+      (devtools/install!)))
+
+
+  ;; State
 
   (defonce app-state
     (reagent/atom {:text "Hello, what is your name? "
@@ -74,6 +89,7 @@
                     (.getElementById js/document "app")))
 
   (defn ^:export main []
+    (dev-setup)
     (app-routes)
     (reload))
 #+END_SRC

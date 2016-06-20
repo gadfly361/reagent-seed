@@ -8,6 +8,7 @@ into an Emacs-focused monster.  The template includes:
 * [reagent](https://github.com/reagent-project/reagent)
 * [cider](https://github.com/clojure-emacs/cider)
 * [devcards](https://github.com/bhauman/devcards)
+* [cljs-devtools](https://github.com/binaryage/cljs-devtools)
 * [doo](https://github.com/bensu/doo)
 * [figwheel](https://github.com/bhauman/lein-figwheel)
 * [garden](https://github.com/noprompt/garden)
