@@ -114,9 +114,16 @@ Then open *resources/public/cards.html*
 
 ## Other Templates
 
-* [reagent-figwheel](https://github.com/gadfly361/reagent-figwheel)
+* [luminus](https://github.com/luminus-framework/luminus-template)
+* [pedestal](https://github.com/pedestal/pedestal)
 * [re-frame-template](https://github.com/Day8/re-frame-template)
+* [reagent-figwheel](https://github.com/gadfly361/reagent-figwheel)
 * [thi.ng babel](https://github.com/thi-ng/babel)
+* [vase](https://github.com/cognitect-labs/vase)
+
+
+There is also a public [comparison chart](https://goo.gl/ZZH8fm) of the common templates.
+
 
 **Special thanks to thi.ng babel template for showing how to use org-mode with clojurescript*
 
